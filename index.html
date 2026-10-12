@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EventDesk: answers about your event, from your own vetted information</title>
+<meta name="description" content="EventDesk is a conversational agent that answers attendees' questions about an event using only the information the organizer has loaded and vetted.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1d1c1a;
+    --muted: #5f5c55;
+    --line: #e4e0d6;
+    --accent: #0b5d4e;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413;
+      --text: #ecebe6;
+      --muted: #a3a097;
+      --line: #2e2d2a;
+      --accent: #6fd0b8;
+      --card: #1c1c1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 72px; }
+  .brand { font-weight: 700; letter-spacing: 0.02em; color: var(--accent); }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.15; margin: 28px 0 16px; }
+  h2 { font-size: 1.15rem; margin: 48px 0 12px; }
+  p { margin: 0 0 16px; }
+  .lead { font-size: 1.15rem; color: var(--muted); }
+  ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+  li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  li strong { display: block; margin-bottom: 2px; }
+  li span { color: var(--muted); }
+  a { color: var(--accent); }
+  .status { border-left: 3px solid var(--accent); padding-left: 14px; color: var(--muted); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">EventDesk</div>
+
+  <h1>Answers about your event, from your own vetted information.</h1>
+  <p class="lead">EventDesk is a conversational agent for event organizers. Attendees, speakers, sponsors and exhibitors ask it questions, and it answers using only what the organizer has loaded and approved, citing the source each time.</p>
+
+  <h2>The problem</h2>
+  <p>Close to an event, an organizer's office receives many messages a day. Most repeat questions that already have a published answer, the right answer changes as the event approaches, and the knowledge is spread across departments.</p>
+
+  <h2>What EventDesk does</h2>
+  <ul>
+    <li><strong>Answers from vetted sources only</strong><span>The event website and the organizer's documents, each with a date, so every answer can point to where it came from.</span></li>
+    <li><strong>Says when it does not know</strong><span>If no approved source holds the answer, it says so and points the person to the right department.</span></li>
+    <li><strong>Shows staff what is missing</strong><span>Every question it could not answer is recorded, so the team knows what to add next.</span></li>
+    <li><strong>Uses no personal data</strong><span>In this first version every asker is anonymous and only public information is used.</span></li>
+  </ul>
+
+  <h2>Status</h2>
+  <p class="status">EventDesk is in development. The first version is being built with a professional congress organizer that runs medical, scientific and academic congresses.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or interest in a pilot: <a href="mailto:hernan@eventdesk.me">hernan@eventdesk.me</a></p>
+
+  <footer>&copy; 2026 EventDesk</footer>
+</main>
+</body>
+</html>
